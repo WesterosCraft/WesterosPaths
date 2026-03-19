@@ -38,7 +38,7 @@ dependencies {
 }
 
 loom {
-    accessWidenerPath = file("src/main/resources/arda-path.accesswidener")
+    accessWidenerPath = file("src/main/resources/westeros-path.accesswidener")
 
     runs {
         client {

@@ -1,11 +1,9 @@
-# ArdaPaths
+> *This project is a fork of [ArdaPaths](https://github.com/ArdaCraft/ArdaPaths) by Ajcool & Paul, originally developed for [ArdaCraft](https://www.ardacraft.me).*
+
+# WesterosPaths
 ***Customize and reveal guiding paths for players to follow in the world.***
 
-ArdaPaths is a Fabric mod designed to immerse players in a world by allowing configurable paths to show animated trails.
-
-The mod is initially configured for use on ArdaCraft and with their recreation of Middle-earth. With ArdaPaths, players can embark on their own journey through Middle-earth like never before, tracing the iconic paths of beloved characters from the Lord of the Rings series.
-
-Whether it's Frodo's perilous trek to Mount Doom or Aragorn's valiant march to reclaim his throne, each path can be meticulously plotted using the features in this mod.
+WesterosPaths is a Fabric mod designed to immerse players in a world by allowing configurable paths to show animated trails. It is configured for use on WesterosCraft and their recreation of Westeros.
 
 ## Blocks and Items
 
@@ -82,9 +80,9 @@ The pathfinder is an item that allows players to select and follow paths. When u
 
 ## Path Configuration
 
-By default, ArdaPaths is configured for use on the ArdaCraft server with four built-in paths of characters from the LOTR series.
+By default, WesterosPaths is configured for use on the WesterosCraft server with four built-in paths of characters from the ASOIAF series.
 
-New paths can be added to the `arda-paths/server.json` file with the following format:
+New paths can be added to the `westeros-paths/server.json` file with the following format:
 
 ```json
 {

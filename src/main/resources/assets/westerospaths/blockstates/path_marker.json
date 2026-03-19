@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "westerospaths:block/path_marker"
+    }
+  }
+}

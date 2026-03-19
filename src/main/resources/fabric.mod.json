@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "id": "ardapaths",
+  "id": "westerospaths",
   "version": "${version}",
-  "name": "ArdaPaths",
-  "description": "Visualizing different paths across the world of Arda",
+  "name": "WesterosPaths",
+  "description": "Visualizing different paths across the world of Westeros",
   "authors": [
     "Ajcool"
   ],
   "contact": {
     "website": "ajcool.space",
-    "repo": "https://github.com/jakep/ardapaths"
+    "repo": "https://github.com/jakep/westerospaths"
   },
   "license": "All-Rights-Reserved",
-  "icon": "assets/ardapaths/icon.png",
+  "icon": "assets/westerospaths/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "space.ajcool.ardapaths.ArdaPathsClient"
+      "space.ajcool.westerospaths.WesterosPathsClient"
     ],
     "main": [
-      "space.ajcool.ardapaths.ArdaPaths"
+      "space.ajcool.westerospaths.WesterosPaths"
     ]
   },
   "mixins": [
-    "ardapaths.mixins.json"
+    "westerospaths.mixins.json"
   ],
-  "accessWidener": "arda-path.accesswidener",
+  "accessWidener": "westeros-path.accesswidener",
   "depends": {
     "fabricloader": ">=${loader_version}",
     "minecraft": "${minecraft_version}",
