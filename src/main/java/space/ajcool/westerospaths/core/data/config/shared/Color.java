@@ -49,7 +49,7 @@ public class Color
      */
     public int asHex()
     {
-        return (r << 16) | (g << 8) | b;
+        return 0xFF000000 | (r << 16) | (g << 8) | b;
     }
 
     /**
