@@ -109,7 +109,7 @@ public class ClientConfig
      */
     public String getSelectedPathId(String identifier)
     {
-        if (!selectedPaths.containsKey(identifier)) return "frodo";
+        if (!selectedPaths.containsKey(identifier)) return "eddard";
         return selectedPaths.get(identifier).getPathId();
     }
 

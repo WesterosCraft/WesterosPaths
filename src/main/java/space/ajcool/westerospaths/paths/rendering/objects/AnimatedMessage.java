@@ -172,8 +172,9 @@ public class AnimatedMessage extends TextRenderable {
         int textLength = message.length() + 1;
         int numChars = charRevealSpeed == 0 ? textLength : Math.max(Math.min((int) (elapsedMillis / charRevealSpeed), textLength), 1);
 
-        // Split message into lines and build partially revealed text
-        var splitMessage = message.split("\n");
+        // Split message into lines, then word-wrap each line to a max width
+        int maxWidth = width * 2 / 3;
+        var splitMessage = wrapLines(message.split("\n"), font, maxWidth);
         int numCharsLeft = numChars;
 
         var lines = new ArrayList<Text>();
@@ -226,6 +227,32 @@ public class AnimatedMessage extends TextRenderable {
                     ColorHelper.Argb.getArgb(opacity, 255, 255, 255)
             );
         }
+    }
+
+    private static String[] wrapLines(String[] lines, TextRenderer font, int maxWidth) {
+        var wrapped = new ArrayList<String>();
+        for (String line : lines) {
+            if (font.getWidth(line) <= maxWidth) {
+                wrapped.add(line);
+                continue;
+            }
+            var words = line.split(" ");
+            var current = new StringBuilder();
+            for (String word : words) {
+                if (current.isEmpty()) {
+                    current.append(word);
+                } else if (font.getWidth(current + " " + word) <= maxWidth) {
+                    current.append(" ").append(word);
+                } else {
+                    wrapped.add(current.toString());
+                    current = new StringBuilder(word);
+                }
+            }
+            if (!current.isEmpty()) {
+                wrapped.add(current.toString());
+            }
+        }
+        return wrapped.toArray(new String[0]);
     }
 
     /**
