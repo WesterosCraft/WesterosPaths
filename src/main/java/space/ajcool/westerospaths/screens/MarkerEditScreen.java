@@ -17,6 +17,7 @@ import space.ajcool.westerospaths.WesterosPaths;
 import space.ajcool.westerospaths.WesterosPathsClient;
 import space.ajcool.westerospaths.core.Client;
 import space.ajcool.westerospaths.core.data.BitPacker;
+import space.ajcool.westerospaths.core.data.config.shared.Book;
 import space.ajcool.westerospaths.core.data.config.shared.ChapterData;
 import space.ajcool.westerospaths.core.data.config.shared.PathData;
 import space.ajcool.westerospaths.core.networking.PacketRegistry;
@@ -41,6 +42,7 @@ public class MarkerEditScreen extends Screen
 {
     private final PathMarkerBlockEntity MARKER;
 
+    private Book selectedBookFilter;
     private String selectedPathId;
     private String selectedChapterId;
     private boolean isChapterStart;
@@ -102,8 +104,9 @@ public class MarkerEditScreen extends Screen
         this.buildTitle(centerX - 140, currentY);
         this.buildSubtitle(centerX - 179, currentY+=25);
         this.buildPathSelectionDropdown(centerX - 140, currentY += 40);
+        this.buildBookFilterDropdown(centerX - 140, currentY += 35);
 
-        this.buildChapterSelectionDropdown(centerX - 140, currentY += 40);
+        this.buildChapterSelectionDropdown(centerX - 140, currentY += 35);
         this.buildEditChaptersButton(centerX + 40, currentY);
         this.buildChapterStartCheckbox(centerX - 69, currentY += 30);
         displayChapterTitleOnTrail = this.buildChapterStartHideTitleCheckbox(centerX + 125, currentY);
@@ -245,6 +248,38 @@ public class MarkerEditScreen extends Screen
                 {
                     selectedPathId = path.getId();
                     selectedChapterId = path.getChapterIds().get(0);
+                    selectedBookFilter = null;
+                    this.clearAndInit();
+                })
+                .build()
+        );
+    }
+
+    private void buildBookFilterDropdown(int x, int y)
+    {
+        PathData selectedPath = WesterosPathsClient.CONFIG.getPath(selectedPathId);
+        List<Book> bookOptions = new ArrayList<>();
+        for (Book book : Book.values()) {
+            boolean hasChapters = selectedPath != null && selectedPath.getChapters().stream()
+                    .anyMatch(ch -> ch.getBook().equalsIgnoreCase(book.getId()));
+            if (hasChapters) {
+                bookOptions.add(book);
+            }
+        }
+
+        this.addDrawableChild(DropdownBuilder.<Book>create()
+                .setPosition(x, y)
+                .setSize(175, 20)
+                .setTitle(Text.literal("Filter by Book"))
+                .setOptions(bookOptions)
+                .setAllowNull(true)
+                .setOptionDisplay(book -> {
+                    if (book == null) return Text.literal("All Books");
+                    return Text.literal(book.getDisplayName());
+                })
+                .setSelected(selectedBookFilter)
+                .setOnSelect(book -> {
+                    selectedBookFilter = book;
                     this.clearAndInit();
                 })
                 .build()
@@ -256,6 +291,9 @@ public class MarkerEditScreen extends Screen
         PathData selectedPath = WesterosPathsClient.CONFIG.getPath(selectedPathId);
 
         List<ChapterData> chapters = selectedPath != null ? new ArrayList<>(selectedPath.getChapters()) : new ArrayList<>();
+        if (selectedBookFilter != null) {
+            chapters.removeIf(ch -> !ch.getBook().equalsIgnoreCase(selectedBookFilter.getId()) && !ch.getId().equals("default"));
+        }
         chapters.sort(Comparator.comparingInt(ChapterData::getIndex));
 
         this.addDrawableChild(DropdownBuilder.<ChapterData>create()
@@ -464,9 +502,9 @@ public class MarkerEditScreen extends Screen
         super.render(context, mouseX, mouseY, delta);
 
         int centerX = this.width / 2;
-        int currentY = 112;
+        int currentY = 152;
 
-        context.drawTextWithShadow(this.textRenderer, Text.translatable("westerospaths.client.marker.configuration.screens.proximity_message"), centerX - 140, currentY + 65, 0xFFFFFF);
+        context.drawTextWithShadow(this.textRenderer, Text.translatable("westerospaths.client.marker.configuration.screens.proximity_message"), centerX - 140, currentY + 58, 0xFFFFFF);
 
         int sideY = currentY+86;
 

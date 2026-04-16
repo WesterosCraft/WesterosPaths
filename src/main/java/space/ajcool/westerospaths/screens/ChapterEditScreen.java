@@ -10,6 +10,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import space.ajcool.westerospaths.WesterosPaths;
 import space.ajcool.westerospaths.WesterosPathsClient;
+import space.ajcool.westerospaths.core.data.config.shared.Book;
 import space.ajcool.westerospaths.core.data.config.shared.ChapterData;
 import space.ajcool.westerospaths.core.data.config.shared.Color;
 import space.ajcool.westerospaths.core.data.config.shared.PathData;
@@ -24,6 +25,7 @@ import space.ajcool.westerospaths.screens.widgets.InputBoxWidget;
 import space.ajcool.westerospaths.screens.widgets.TextValidationError;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
@@ -40,6 +42,7 @@ public class ChapterEditScreen extends Screen
     private InputBoxWidget pathColorPrimary;
     private InputBoxWidget pathColorSecondary;
     private InputBoxWidget pathColorTertiary;
+    private DropdownWidget<Book> bookDropdown;
     private ButtonWidget applyColorChangesButton;
     private DropdownWidget<PathData> pathDropdown;
 
@@ -188,6 +191,20 @@ public class ChapterEditScreen extends Screen
                 .build()
         );
 
+        List<Book> bookOptions = new ArrayList<>(Arrays.asList(Book.values()));
+        bookDropdown = this.addDrawableChild(DropdownBuilder.<Book>create()
+                .setPosition(centerX - 75, y += 40)
+                .setSize(150, 20)
+                .setTitle(Text.literal("Book"))
+                .setOptions(bookOptions)
+                .setAllowNull(true)
+                .setOptionDisplay(book -> {
+                    if (book == null) return Text.literal("None");
+                    return Text.literal(book.getDisplayName());
+                })
+                .build()
+        );
+
         this.addDrawableChild(ButtonWidget.builder(
                         Text.literal("＋"),
                         button ->
@@ -237,7 +254,8 @@ public class ChapterEditScreen extends Screen
                                     nameInput.getText(),
                                     dateInput.getText(),
                                     Integer.parseInt(indexInput.getText()),
-                                    warpInput.getText()
+                                    warpInput.getText(),
+                                    bookDropdown.getSelected() != null ? bookDropdown.getSelected().getId() : ""
                             );
                             Paths.updateChapter(path.getId(), chapter);
 
@@ -270,6 +288,7 @@ public class ChapterEditScreen extends Screen
             dateInput.setText(chapter.getDate());
             indexInput.setText(String.valueOf(chapter.getIndex()));
             warpInput.setText(chapter.getWarp());
+            bookDropdown.setSelected(Book.fromId(chapter.getBook()));
         });
     }
 
@@ -387,6 +406,7 @@ public class ChapterEditScreen extends Screen
         dateInput.reset();
         indexInput.reset();
         warpInput.reset();
+        bookDropdown.setSelected(null);
     }
 
     @Override

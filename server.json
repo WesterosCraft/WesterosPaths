@@ -1,0 +1,2705 @@
+{
+  "paths": [
+    {
+      "id": "prologue",
+      "name": "Prologue",
+      "primaryColor": {
+        "red": 169,
+        "green": 169,
+        "blue": 169
+      },
+      "secondaryColor": {
+        "red": 118,
+        "green": 118,
+        "blue": 118
+      },
+      "tertiaryColor": {
+        "red": 200,
+        "green": 200,
+        "blue": 200
+      },
+      "chapters": {
+        "default": {
+          "id": "default",
+          "name": "Default",
+          "date": "0",
+          "index": 0,
+          "book": ""
+        },
+        "got_prologue": {
+          "id": "got_prologue",
+          "name": "Prologue",
+          "date": "",
+          "index": 1,
+          "warp": "",
+          "book": "agot"
+        },
+        "acok_prologue": {
+          "id": "acok_prologue",
+          "name": "Prologue",
+          "date": "",
+          "index": 2,
+          "warp": "",
+          "book": "acok"
+        },
+        "asos_prologue": {
+          "id": "asos_prologue",
+          "name": "Prologue",
+          "date": "",
+          "index": 3,
+          "warp": "",
+          "book": "asos"
+        },
+        "affc_prologue": {
+          "id": "affc_prologue",
+          "name": "Prologue",
+          "date": "",
+          "index": 4,
+          "warp": "",
+          "book": "affc"
+        },
+        "adwd_prologue": {
+          "id": "adwd_prologue",
+          "name": "Prologue",
+          "date": "",
+          "index": 5,
+          "warp": "",
+          "book": "adwd"
+        }
+      }
+    },
+    {
+      "id": "eddard",
+      "name": "Eddard Stark's Path",
+      "primaryColor": {
+        "red": 255,
+        "green": 215,
+        "blue": 0
+      },
+      "secondaryColor": {
+        "red": 230,
+        "green": 194,
+        "blue": 0
+      },
+      "tertiaryColor": {
+        "red": 255,
+        "green": 227,
+        "blue": 77
+      },
+      "chapters": {
+        "default": {
+          "id": "default",
+          "name": "Default",
+          "date": "0",
+          "index": 0,
+          "book": ""
+        },
+        "got_eddard_1": {
+          "id": "got_eddard_1",
+          "name": "Eddard I",
+          "date": "",
+          "index": 1,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_eddard_2": {
+          "id": "got_eddard_2",
+          "name": "Eddard II",
+          "date": "",
+          "index": 2,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_eddard_3": {
+          "id": "got_eddard_3",
+          "name": "Eddard III",
+          "date": "",
+          "index": 3,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_eddard_4": {
+          "id": "got_eddard_4",
+          "name": "Eddard IV",
+          "date": "",
+          "index": 4,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_eddard_5": {
+          "id": "got_eddard_5",
+          "name": "Eddard V",
+          "date": "",
+          "index": 5,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_eddard_6": {
+          "id": "got_eddard_6",
+          "name": "Eddard VI",
+          "date": "",
+          "index": 6,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_eddard_7": {
+          "id": "got_eddard_7",
+          "name": "Eddard VII",
+          "date": "",
+          "index": 7,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_eddard_8": {
+          "id": "got_eddard_8",
+          "name": "Eddard VIII",
+          "date": "",
+          "index": 8,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_eddard_9": {
+          "id": "got_eddard_9",
+          "name": "Eddard IX",
+          "date": "",
+          "index": 9,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_eddard_10": {
+          "id": "got_eddard_10",
+          "name": "Eddard X",
+          "date": "",
+          "index": 10,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_eddard_11": {
+          "id": "got_eddard_11",
+          "name": "Eddard XI",
+          "date": "",
+          "index": 11,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_eddard_12": {
+          "id": "got_eddard_12",
+          "name": "Eddard XII",
+          "date": "",
+          "index": 12,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_eddard_13": {
+          "id": "got_eddard_13",
+          "name": "Eddard XIII",
+          "date": "",
+          "index": 13,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_eddard_14": {
+          "id": "got_eddard_14",
+          "name": "Eddard XIV",
+          "date": "",
+          "index": 14,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_eddard_15": {
+          "id": "got_eddard_15",
+          "name": "Eddard XV",
+          "date": "",
+          "index": 15,
+          "warp": "",
+          "book": "agot"
+        }
+      }
+    },
+    {
+      "id": "catelyn",
+      "name": "Catelyn Stark's Path",
+      "primaryColor": {
+        "red": 0,
+        "green": 158,
+        "blue": 96
+      },
+      "secondaryColor": {
+        "red": 0,
+        "green": 126,
+        "blue": 77
+      },
+      "tertiaryColor": {
+        "red": 77,
+        "green": 187,
+        "blue": 144
+      },
+      "chapters": {
+        "default": {
+          "id": "default",
+          "name": "Default",
+          "date": "0",
+          "index": 0,
+          "book": ""
+        },
+        "got_catelyn_1": {
+          "id": "got_catelyn_1",
+          "name": "Catelyn I",
+          "date": "",
+          "index": 1,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_catelyn_2": {
+          "id": "got_catelyn_2",
+          "name": "Catelyn II",
+          "date": "",
+          "index": 2,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_catelyn_3": {
+          "id": "got_catelyn_3",
+          "name": "Catelyn III",
+          "date": "",
+          "index": 3,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_catelyn_4": {
+          "id": "got_catelyn_4",
+          "name": "Catelyn IV",
+          "date": "",
+          "index": 4,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_catelyn_5": {
+          "id": "got_catelyn_5",
+          "name": "Catelyn V",
+          "date": "",
+          "index": 5,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_catelyn_6": {
+          "id": "got_catelyn_6",
+          "name": "Catelyn VI",
+          "date": "",
+          "index": 6,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_catelyn_7": {
+          "id": "got_catelyn_7",
+          "name": "Catelyn VII",
+          "date": "",
+          "index": 7,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_catelyn_8": {
+          "id": "got_catelyn_8",
+          "name": "Catelyn VIII",
+          "date": "",
+          "index": 8,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_catelyn_9": {
+          "id": "got_catelyn_9",
+          "name": "Catelyn IX",
+          "date": "",
+          "index": 9,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_catelyn_10": {
+          "id": "got_catelyn_10",
+          "name": "Catelyn X",
+          "date": "",
+          "index": 10,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_catelyn_11": {
+          "id": "got_catelyn_11",
+          "name": "Catelyn XI",
+          "date": "",
+          "index": 11,
+          "warp": "",
+          "book": "agot"
+        },
+        "acok_catelyn_1": {
+          "id": "acok_catelyn_1",
+          "name": "Catelyn I",
+          "date": "",
+          "index": 12,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_catelyn_2": {
+          "id": "acok_catelyn_2",
+          "name": "Catelyn II",
+          "date": "",
+          "index": 13,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_catelyn_3": {
+          "id": "acok_catelyn_3",
+          "name": "Catelyn III",
+          "date": "",
+          "index": 14,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_catelyn_4": {
+          "id": "acok_catelyn_4",
+          "name": "Catelyn IV",
+          "date": "",
+          "index": 15,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_catelyn_5": {
+          "id": "acok_catelyn_5",
+          "name": "Catelyn V",
+          "date": "",
+          "index": 16,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_catelyn_6": {
+          "id": "acok_catelyn_6",
+          "name": "Catelyn VI",
+          "date": "",
+          "index": 17,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_catelyn_7": {
+          "id": "acok_catelyn_7",
+          "name": "Catelyn VII",
+          "date": "",
+          "index": 18,
+          "warp": "",
+          "book": "acok"
+        },
+        "asos_catelyn_1": {
+          "id": "asos_catelyn_1",
+          "name": "Catelyn I",
+          "date": "",
+          "index": 19,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_catelyn_2": {
+          "id": "asos_catelyn_2",
+          "name": "Catelyn II",
+          "date": "",
+          "index": 20,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_catelyn_3": {
+          "id": "asos_catelyn_3",
+          "name": "Catelyn III",
+          "date": "",
+          "index": 21,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_catelyn_4": {
+          "id": "asos_catelyn_4",
+          "name": "Catelyn IV",
+          "date": "",
+          "index": 22,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_catelyn_5": {
+          "id": "asos_catelyn_5",
+          "name": "Catelyn V",
+          "date": "",
+          "index": 23,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_catelyn_6": {
+          "id": "asos_catelyn_6",
+          "name": "Catelyn VI",
+          "date": "",
+          "index": 24,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_catelyn_7": {
+          "id": "asos_catelyn_7",
+          "name": "Catelyn VII",
+          "date": "",
+          "index": 25,
+          "warp": "",
+          "book": "asos"
+        }
+      }
+    },
+    {
+      "id": "bran",
+      "name": "Bran Stark's Path",
+      "primaryColor": {
+        "red": 255,
+        "green": 215,
+        "blue": 0
+      },
+      "secondaryColor": {
+        "red": 230,
+        "green": 194,
+        "blue": 0
+      },
+      "tertiaryColor": {
+        "red": 255,
+        "green": 227,
+        "blue": 77
+      },
+      "chapters": {
+        "default": {
+          "id": "default",
+          "name": "Default",
+          "date": "0",
+          "index": 0,
+          "book": ""
+        },
+        "got_bran_1": {
+          "id": "got_bran_1",
+          "name": "Bran I",
+          "date": "",
+          "index": 1,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_bran_2": {
+          "id": "got_bran_2",
+          "name": "Bran II",
+          "date": "",
+          "index": 2,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_bran_3": {
+          "id": "got_bran_3",
+          "name": "Bran III",
+          "date": "",
+          "index": 3,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_bran_4": {
+          "id": "got_bran_4",
+          "name": "Bran IV",
+          "date": "",
+          "index": 4,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_bran_5": {
+          "id": "got_bran_5",
+          "name": "Bran V",
+          "date": "",
+          "index": 5,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_bran_6": {
+          "id": "got_bran_6",
+          "name": "Bran VI",
+          "date": "",
+          "index": 6,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_bran_7": {
+          "id": "got_bran_7",
+          "name": "Bran VII",
+          "date": "",
+          "index": 7,
+          "warp": "",
+          "book": "agot"
+        },
+        "acok_bran_1": {
+          "id": "acok_bran_1",
+          "name": "Bran I",
+          "date": "",
+          "index": 8,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_bran_2": {
+          "id": "acok_bran_2",
+          "name": "Bran II",
+          "date": "",
+          "index": 9,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_bran_3": {
+          "id": "acok_bran_3",
+          "name": "Bran III",
+          "date": "",
+          "index": 10,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_bran_4": {
+          "id": "acok_bran_4",
+          "name": "Bran IV",
+          "date": "",
+          "index": 11,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_bran_5": {
+          "id": "acok_bran_5",
+          "name": "Bran V",
+          "date": "",
+          "index": 12,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_bran_6": {
+          "id": "acok_bran_6",
+          "name": "Bran VI",
+          "date": "",
+          "index": 13,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_bran_7": {
+          "id": "acok_bran_7",
+          "name": "Bran VII",
+          "date": "",
+          "index": 14,
+          "warp": "",
+          "book": "acok"
+        },
+        "asos_bran_1": {
+          "id": "asos_bran_1",
+          "name": "Bran I",
+          "date": "",
+          "index": 15,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_bran_2": {
+          "id": "asos_bran_2",
+          "name": "Bran II",
+          "date": "",
+          "index": 16,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_bran_3": {
+          "id": "asos_bran_3",
+          "name": "Bran III",
+          "date": "",
+          "index": 17,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_bran_4": {
+          "id": "asos_bran_4",
+          "name": "Bran IV",
+          "date": "",
+          "index": 18,
+          "warp": "",
+          "book": "asos"
+        },
+        "adwd_bran_1": {
+          "id": "adwd_bran_1",
+          "name": "Bran I",
+          "date": "",
+          "index": 19,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_bran_2": {
+          "id": "adwd_bran_2",
+          "name": "Bran II",
+          "date": "",
+          "index": 20,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_bran_3": {
+          "id": "adwd_bran_3",
+          "name": "Bran III",
+          "date": "",
+          "index": 21,
+          "warp": "",
+          "book": "adwd"
+        }
+      }
+    },
+    {
+      "id": "sansa",
+      "name": "Sansa Stark's Path",
+      "primaryColor": {
+        "red": 199,
+        "green": 21,
+        "blue": 133
+      },
+      "secondaryColor": {
+        "red": 139,
+        "green": 15,
+        "blue": 93
+      },
+      "tertiaryColor": {
+        "red": 222,
+        "green": 93,
+        "blue": 170
+      },
+      "chapters": {
+        "default": {
+          "id": "default",
+          "name": "Default",
+          "date": "0",
+          "index": 0,
+          "book": ""
+        },
+        "got_sansa_1": {
+          "id": "got_sansa_1",
+          "name": "Sansa I",
+          "date": "",
+          "index": 1,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_sansa_2": {
+          "id": "got_sansa_2",
+          "name": "Sansa II",
+          "date": "",
+          "index": 2,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_sansa_3": {
+          "id": "got_sansa_3",
+          "name": "Sansa III",
+          "date": "",
+          "index": 3,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_sansa_4": {
+          "id": "got_sansa_4",
+          "name": "Sansa IV",
+          "date": "",
+          "index": 4,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_sansa_5": {
+          "id": "got_sansa_5",
+          "name": "Sansa V",
+          "date": "",
+          "index": 5,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_sansa_6": {
+          "id": "got_sansa_6",
+          "name": "Sansa VI",
+          "date": "",
+          "index": 6,
+          "warp": "",
+          "book": "agot"
+        },
+        "acok_sansa_1": {
+          "id": "acok_sansa_1",
+          "name": "Sansa I",
+          "date": "",
+          "index": 7,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_sansa_2": {
+          "id": "acok_sansa_2",
+          "name": "Sansa II",
+          "date": "",
+          "index": 8,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_sansa_3": {
+          "id": "acok_sansa_3",
+          "name": "Sansa III",
+          "date": "",
+          "index": 9,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_sansa_4": {
+          "id": "acok_sansa_4",
+          "name": "Sansa IV",
+          "date": "",
+          "index": 10,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_sansa_5": {
+          "id": "acok_sansa_5",
+          "name": "Sansa V",
+          "date": "",
+          "index": 11,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_sansa_6": {
+          "id": "acok_sansa_6",
+          "name": "Sansa VI",
+          "date": "",
+          "index": 12,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_sansa_7": {
+          "id": "acok_sansa_7",
+          "name": "Sansa VII",
+          "date": "",
+          "index": 13,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_sansa_8": {
+          "id": "acok_sansa_8",
+          "name": "Sansa VIII",
+          "date": "",
+          "index": 14,
+          "warp": "",
+          "book": "acok"
+        },
+        "asos_sansa_1": {
+          "id": "asos_sansa_1",
+          "name": "Sansa I",
+          "date": "",
+          "index": 15,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_sansa_2": {
+          "id": "asos_sansa_2",
+          "name": "Sansa II",
+          "date": "",
+          "index": 16,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_sansa_3": {
+          "id": "asos_sansa_3",
+          "name": "Sansa III",
+          "date": "",
+          "index": 17,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_sansa_4": {
+          "id": "asos_sansa_4",
+          "name": "Sansa IV",
+          "date": "",
+          "index": 18,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_sansa_5": {
+          "id": "asos_sansa_5",
+          "name": "Sansa V",
+          "date": "",
+          "index": 19,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_sansa_6": {
+          "id": "asos_sansa_6",
+          "name": "Sansa VI",
+          "date": "",
+          "index": 20,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_sansa_7": {
+          "id": "asos_sansa_7",
+          "name": "Sansa VII",
+          "date": "",
+          "index": 21,
+          "warp": "",
+          "book": "asos"
+        },
+        "affc_sansa_1": {
+          "id": "affc_sansa_1",
+          "name": "Sansa I",
+          "date": "",
+          "index": 22,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_sansa_2": {
+          "id": "affc_sansa_2",
+          "name": "Alayne I",
+          "date": "",
+          "index": 23,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_sansa_3": {
+          "id": "affc_sansa_3",
+          "name": "Alayne II",
+          "date": "",
+          "index": 24,
+          "warp": "",
+          "book": "affc"
+        }
+      }
+    },
+    {
+      "id": "arya",
+      "name": "Arya Stark's Path",
+      "primaryColor": {
+        "red": 112,
+        "green": 128,
+        "blue": 144
+      },
+      "secondaryColor": {
+        "red": 78,
+        "green": 90,
+        "blue": 101
+      },
+      "tertiaryColor": {
+        "red": 159,
+        "green": 171,
+        "blue": 183
+      },
+      "chapters": {
+        "default": {
+          "id": "default",
+          "name": "Default",
+          "date": "0",
+          "index": 0,
+          "book": ""
+        },
+        "got_arya_1": {
+          "id": "got_arya_1",
+          "name": "Arya I",
+          "date": "",
+          "index": 1,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_arya_2": {
+          "id": "got_arya_2",
+          "name": "Arya II",
+          "date": "",
+          "index": 2,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_arya_3": {
+          "id": "got_arya_3",
+          "name": "Arya III",
+          "date": "",
+          "index": 3,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_arya_4": {
+          "id": "got_arya_4",
+          "name": "Arya IV",
+          "date": "",
+          "index": 4,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_arya_5": {
+          "id": "got_arya_5",
+          "name": "Arya V",
+          "date": "",
+          "index": 5,
+          "warp": "",
+          "book": "agot"
+        },
+        "acok_arya_1": {
+          "id": "acok_arya_1",
+          "name": "Arya I",
+          "date": "",
+          "index": 6,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_arya_2": {
+          "id": "acok_arya_2",
+          "name": "Arya II",
+          "date": "",
+          "index": 7,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_arya_3": {
+          "id": "acok_arya_3",
+          "name": "Arya III",
+          "date": "",
+          "index": 8,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_arya_4": {
+          "id": "acok_arya_4",
+          "name": "Arya IV",
+          "date": "",
+          "index": 9,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_arya_5": {
+          "id": "acok_arya_5",
+          "name": "Arya V",
+          "date": "",
+          "index": 10,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_arya_6": {
+          "id": "acok_arya_6",
+          "name": "Arya VI",
+          "date": "",
+          "index": 11,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_arya_7": {
+          "id": "acok_arya_7",
+          "name": "Arya VII",
+          "date": "",
+          "index": 12,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_arya_8": {
+          "id": "acok_arya_8",
+          "name": "Arya VIII",
+          "date": "",
+          "index": 13,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_arya_9": {
+          "id": "acok_arya_9",
+          "name": "Arya IX",
+          "date": "",
+          "index": 14,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_arya_10": {
+          "id": "acok_arya_10",
+          "name": "Arya X",
+          "date": "",
+          "index": 15,
+          "warp": "",
+          "book": "acok"
+        },
+        "asos_arya_1": {
+          "id": "asos_arya_1",
+          "name": "Arya I",
+          "date": "",
+          "index": 16,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_arya_2": {
+          "id": "asos_arya_2",
+          "name": "Arya II",
+          "date": "",
+          "index": 17,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_arya_3": {
+          "id": "asos_arya_3",
+          "name": "Arya III",
+          "date": "",
+          "index": 18,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_arya_4": {
+          "id": "asos_arya_4",
+          "name": "Arya IV",
+          "date": "",
+          "index": 19,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_arya_5": {
+          "id": "asos_arya_5",
+          "name": "Arya V",
+          "date": "",
+          "index": 20,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_arya_6": {
+          "id": "asos_arya_6",
+          "name": "Arya VI",
+          "date": "",
+          "index": 21,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_arya_7": {
+          "id": "asos_arya_7",
+          "name": "Arya VII",
+          "date": "",
+          "index": 22,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_arya_8": {
+          "id": "asos_arya_8",
+          "name": "Arya VIII",
+          "date": "",
+          "index": 23,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_arya_9": {
+          "id": "asos_arya_9",
+          "name": "Arya IX",
+          "date": "",
+          "index": 24,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_arya_10": {
+          "id": "asos_arya_10",
+          "name": "Arya X",
+          "date": "",
+          "index": 25,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_arya_11": {
+          "id": "asos_arya_11",
+          "name": "Arya XI",
+          "date": "",
+          "index": 26,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_arya_12": {
+          "id": "asos_arya_12",
+          "name": "Arya XII",
+          "date": "",
+          "index": 27,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_arya_13": {
+          "id": "asos_arya_13",
+          "name": "Arya XIII",
+          "date": "",
+          "index": 28,
+          "warp": "",
+          "book": "asos"
+        },
+        "affc_arya_1": {
+          "id": "affc_arya_1",
+          "name": "Arya I",
+          "date": "",
+          "index": 29,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_arya_2": {
+          "id": "affc_arya_2",
+          "name": "Arya II",
+          "date": "",
+          "index": 30,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_arya_3": {
+          "id": "affc_arya_3",
+          "name": "Cat of the Canals",
+          "date": "",
+          "index": 31,
+          "warp": "",
+          "book": "affc"
+        },
+        "adwd_arya_1": {
+          "id": "adwd_arya_1",
+          "name": "The Blind Girl",
+          "date": "",
+          "index": 32,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_arya_2": {
+          "id": "adwd_arya_2",
+          "name": "The Ugly Little Girl",
+          "date": "",
+          "index": 33,
+          "warp": "",
+          "book": "adwd"
+        }
+      }
+    },
+    {
+      "id": "tyrion",
+      "name": "Tyrions Lannister's Path",
+      "primaryColor": {
+        "red": 125,
+        "green": 249,
+        "blue": 255
+      },
+      "secondaryColor": {
+        "red": 88,
+        "green": 174,
+        "blue": 179
+      },
+      "tertiaryColor": {
+        "red": 164,
+        "green": 251,
+        "blue": 255
+      },
+      "chapters": {
+        "default": {
+          "id": "default",
+          "name": "Default",
+          "date": "0",
+          "index": 0,
+          "book": ""
+        },
+        "got_tyrion_1": {
+          "id": "got_tyrion_1",
+          "name": "Tyrion I",
+          "date": "",
+          "index": 1,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_tyrion_2": {
+          "id": "got_tyrion_2",
+          "name": "Tyrion II",
+          "date": "",
+          "index": 2,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_tyrion_3": {
+          "id": "got_tyrion_3",
+          "name": "Tyrion III",
+          "date": "",
+          "index": 3,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_tyrion_4": {
+          "id": "got_tyrion_4",
+          "name": "Tyrion IV",
+          "date": "",
+          "index": 4,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_tyrion_5": {
+          "id": "got_tyrion_5",
+          "name": "Tyrion V",
+          "date": "",
+          "index": 5,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_tyrion_6": {
+          "id": "got_tyrion_6",
+          "name": "Tyrion VI",
+          "date": "",
+          "index": 6,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_tyrion_7": {
+          "id": "got_tyrion_7",
+          "name": "Tyrion VII",
+          "date": "",
+          "index": 7,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_tyrion_8": {
+          "id": "got_tyrion_8",
+          "name": "Tyrion VIII",
+          "date": "",
+          "index": 8,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_tyrion_9": {
+          "id": "got_tyrion_9",
+          "name": "Tyrion IX",
+          "date": "",
+          "index": 9,
+          "warp": "",
+          "book": "agot"
+        },
+        "acok_tyrion_1": {
+          "id": "acok_tyrion_1",
+          "name": "Tyrion I",
+          "date": "",
+          "index": 10,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_tyrion_2": {
+          "id": "acok_tyrion_2",
+          "name": "Tyrion II",
+          "date": "",
+          "index": 11,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_tyrion_3": {
+          "id": "acok_tyrion_3",
+          "name": "Tyrion III",
+          "date": "",
+          "index": 12,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_tyrion_4": {
+          "id": "acok_tyrion_4",
+          "name": "Tyrion IV",
+          "date": "",
+          "index": 13,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_tyrion_5": {
+          "id": "acok_tyrion_5",
+          "name": "Tyrion V",
+          "date": "",
+          "index": 14,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_tyrion_6": {
+          "id": "acok_tyrion_6",
+          "name": "Tyrion VI",
+          "date": "",
+          "index": 15,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_tyrion_7": {
+          "id": "acok_tyrion_7",
+          "name": "Tyrion VII",
+          "date": "",
+          "index": 16,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_tyrion_8": {
+          "id": "acok_tyrion_8",
+          "name": "Tyrion VIII",
+          "date": "",
+          "index": 17,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_tyrion_9": {
+          "id": "acok_tyrion_9",
+          "name": "Tyrion IX",
+          "date": "",
+          "index": 18,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_tyrion_10": {
+          "id": "acok_tyrion_10",
+          "name": "Tyrion X",
+          "date": "",
+          "index": 19,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_tyrion_11": {
+          "id": "acok_tyrion_11",
+          "name": "Tyrion XI",
+          "date": "",
+          "index": 20,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_tyrion_12": {
+          "id": "acok_tyrion_12",
+          "name": "Tyrion XII",
+          "date": "",
+          "index": 21,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_tyrion_13": {
+          "id": "acok_tyrion_13",
+          "name": "Tyrion XIII",
+          "date": "",
+          "index": 22,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_tyrion_14": {
+          "id": "acok_tyrion_14",
+          "name": "Tyrion XIV",
+          "date": "",
+          "index": 23,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_tyrion_15": {
+          "id": "acok_tyrion_15",
+          "name": "Tyrion XV",
+          "date": "",
+          "index": 24,
+          "warp": "",
+          "book": "acok"
+        },
+        "asos_tyrion_1": {
+          "id": "asos_tyrion_1",
+          "name": "Tyrion I",
+          "date": "",
+          "index": 25,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_tyrion_2": {
+          "id": "asos_tyrion_2",
+          "name": "Tyrion II",
+          "date": "",
+          "index": 26,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_tyrion_3": {
+          "id": "asos_tyrion_3",
+          "name": "Tyrion III",
+          "date": "",
+          "index": 27,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_tyrion_4": {
+          "id": "asos_tyrion_4",
+          "name": "Tyrion IV",
+          "date": "",
+          "index": 28,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_tyrion_5": {
+          "id": "asos_tyrion_5",
+          "name": "Tyrion V",
+          "date": "",
+          "index": 29,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_tyrion_6": {
+          "id": "asos_tyrion_6",
+          "name": "Tyrion VI",
+          "date": "",
+          "index": 30,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_tyrion_7": {
+          "id": "asos_tyrion_7",
+          "name": "Tyrion VII",
+          "date": "",
+          "index": 31,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_tyrion_8": {
+          "id": "asos_tyrion_8",
+          "name": "Tyrion VIII",
+          "date": "",
+          "index": 32,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_tyrion_9": {
+          "id": "asos_tyrion_9",
+          "name": "Tyrion IX",
+          "date": "",
+          "index": 33,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_tyrion_10": {
+          "id": "asos_tyrion_10",
+          "name": "Tyrion X",
+          "date": "",
+          "index": 34,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_tyrion_11": {
+          "id": "asos_tyrion_11",
+          "name": "Tyrion XI",
+          "date": "",
+          "index": 35,
+          "warp": "",
+          "book": "asos"
+        },
+        "adwd_tyrion_1": {
+          "id": "adwd_tyrion_1",
+          "name": "Tyrion I",
+          "date": "",
+          "index": 36,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_tyrion_2": {
+          "id": "adwd_tyrion_2",
+          "name": "Tyrion II",
+          "date": "",
+          "index": 37,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_tyrion_3": {
+          "id": "adwd_tyrion_3",
+          "name": "Tyrion III",
+          "date": "",
+          "index": 38,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_tyrion_4": {
+          "id": "adwd_tyrion_4",
+          "name": "Tyrion IV",
+          "date": "",
+          "index": 39,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_tyrion_5": {
+          "id": "adwd_tyrion_5",
+          "name": "Tyrion V",
+          "date": "",
+          "index": 40,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_tyrion_6": {
+          "id": "adwd_tyrion_6",
+          "name": "Tyrion VI",
+          "date": "",
+          "index": 41,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_tyrion_7": {
+          "id": "adwd_tyrion_7",
+          "name": "Tyrion VII",
+          "date": "",
+          "index": 42,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_tyrion_8": {
+          "id": "adwd_tyrion_8",
+          "name": "Tyrion VIII",
+          "date": "",
+          "index": 43,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_tyrion_9": {
+          "id": "adwd_tyrion_9",
+          "name": "Tyrion IX",
+          "date": "",
+          "index": 44,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_tyrion_10": {
+          "id": "adwd_tyrion_10",
+          "name": "Tyrion X",
+          "date": "",
+          "index": 45,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_tyrion_11": {
+          "id": "adwd_tyrion_11",
+          "name": "Tyrion XI",
+          "date": "",
+          "index": 46,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_tyrion_12": {
+          "id": "adwd_tyrion_12",
+          "name": "Tyrion XII",
+          "date": "",
+          "index": 47,
+          "warp": "",
+          "book": "adwd"
+        }
+      }
+    },
+    {
+      "id": "jon",
+      "name": "Jon Snow's Path",
+      "primaryColor": {
+        "red": 227,
+        "green": 66,
+        "blue": 52
+      },
+      "secondaryColor": {
+        "red": 159,
+        "green": 46,
+        "blue": 36
+      },
+      "tertiaryColor": {
+        "red": 235,
+        "green": 123,
+        "blue": 113
+      },
+      "chapters": {
+        "default": {
+          "id": "default",
+          "name": "Default",
+          "date": "0",
+          "index": 0,
+          "book": ""
+        },
+        "got_jon_1": {
+          "id": "got_jon_1",
+          "name": "Jon I",
+          "date": "",
+          "index": 1,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_jon_2": {
+          "id": "got_jon_2",
+          "name": "Jon II",
+          "date": "",
+          "index": 2,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_jon_3": {
+          "id": "got_jon_3",
+          "name": "Jon III",
+          "date": "",
+          "index": 3,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_jon_4": {
+          "id": "got_jon_4",
+          "name": "Jon IV",
+          "date": "",
+          "index": 4,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_jon_5": {
+          "id": "got_jon_5",
+          "name": "Jon V",
+          "date": "",
+          "index": 5,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_jon_6": {
+          "id": "got_jon_6",
+          "name": "Jon VI",
+          "date": "",
+          "index": 6,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_jon_7": {
+          "id": "got_jon_7",
+          "name": "Jon VII",
+          "date": "",
+          "index": 7,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_jon_8": {
+          "id": "got_jon_8",
+          "name": "Jon VIII",
+          "date": "",
+          "index": 8,
+          "warp": "",
+          "book": "agot"
+        },
+        "got_jon_9": {
+          "id": "got_jon_9",
+          "name": "Jon IX",
+          "date": "",
+          "index": 9,
+          "warp": "",
+          "book": "agot"
+        },
+        "acok_jon_1": {
+          "id": "acok_jon_1",
+          "name": "Jon I",
+          "date": "",
+          "index": 10,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_jon_2": {
+          "id": "acok_jon_2",
+          "name": "Jon II",
+          "date": "",
+          "index": 11,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_jon_3": {
+          "id": "acok_jon_3",
+          "name": "Jon III",
+          "date": "",
+          "index": 12,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_jon_4": {
+          "id": "acok_jon_4",
+          "name": "Jon IV",
+          "date": "",
+          "index": 13,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_jon_5": {
+          "id": "acok_jon_5",
+          "name": "Jon V",
+          "date": "",
+          "index": 14,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_jon_6": {
+          "id": "acok_jon_6",
+          "name": "Jon VI",
+          "date": "",
+          "index": 15,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_jon_7": {
+          "id": "acok_jon_7",
+          "name": "Jon VII",
+          "date": "",
+          "index": 16,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_jon_8": {
+          "id": "acok_jon_8",
+          "name": "Jon VIII",
+          "date": "",
+          "index": 17,
+          "warp": "",
+          "book": "acok"
+        },
+        "asos_jon_1": {
+          "id": "asos_jon_1",
+          "name": "Jon I",
+          "date": "",
+          "index": 18,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_jon_2": {
+          "id": "asos_jon_2",
+          "name": "Jon II",
+          "date": "",
+          "index": 19,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_jon_3": {
+          "id": "asos_jon_3",
+          "name": "Jon III",
+          "date": "",
+          "index": 20,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_jon_4": {
+          "id": "asos_jon_4",
+          "name": "Jon IV",
+          "date": "",
+          "index": 21,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_jon_5": {
+          "id": "asos_jon_5",
+          "name": "Jon V",
+          "date": "",
+          "index": 22,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_jon_6": {
+          "id": "asos_jon_6",
+          "name": "Jon VI",
+          "date": "",
+          "index": 23,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_jon_7": {
+          "id": "asos_jon_7",
+          "name": "Jon VII",
+          "date": "",
+          "index": 24,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_jon_8": {
+          "id": "asos_jon_8",
+          "name": "Jon VIII",
+          "date": "",
+          "index": 25,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_jon_9": {
+          "id": "asos_jon_9",
+          "name": "Jon IX",
+          "date": "",
+          "index": 26,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_jon_10": {
+          "id": "asos_jon_10",
+          "name": "Jon X",
+          "date": "",
+          "index": 27,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_jon_11": {
+          "id": "asos_jon_11",
+          "name": "Jon XI",
+          "date": "",
+          "index": 28,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_jon_12": {
+          "id": "asos_jon_12",
+          "name": "Jon XII",
+          "date": "",
+          "index": 29,
+          "warp": "",
+          "book": "asos"
+        },
+        "adwd_jon_1": {
+          "id": "adwd_jon_1",
+          "name": "Jon I",
+          "date": "",
+          "index": 30,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_jon_2": {
+          "id": "adwd_jon_2",
+          "name": "Jon II",
+          "date": "",
+          "index": 31,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_jon_3": {
+          "id": "adwd_jon_3",
+          "name": "Jon III",
+          "date": "",
+          "index": 32,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_jon_4": {
+          "id": "adwd_jon_4",
+          "name": "Jon IV",
+          "date": "",
+          "index": 33,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_jon_5": {
+          "id": "adwd_jon_5",
+          "name": "Jon V",
+          "date": "",
+          "index": 34,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_jon_6": {
+          "id": "adwd_jon_6",
+          "name": "Jon VI",
+          "date": "",
+          "index": 35,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_jon_7": {
+          "id": "adwd_jon_7",
+          "name": "Jon VII",
+          "date": "",
+          "index": 36,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_jon_8": {
+          "id": "adwd_jon_8",
+          "name": "Jon VIII",
+          "date": "",
+          "index": 37,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_jon_9": {
+          "id": "adwd_jon_9",
+          "name": "Jon IX",
+          "date": "",
+          "index": 38,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_jon_10": {
+          "id": "adwd_jon_10",
+          "name": "Jon X",
+          "date": "",
+          "index": 39,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_jon_11": {
+          "id": "adwd_jon_11",
+          "name": "Jon XI",
+          "date": "",
+          "index": 40,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_jon_12": {
+          "id": "adwd_jon_12",
+          "name": "Jon XII",
+          "date": "",
+          "index": 41,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_jon_13": {
+          "id": "adwd_jon_13",
+          "name": "Jon XIII",
+          "date": "",
+          "index": 42,
+          "warp": "",
+          "book": "adwd"
+        }
+      }
+    },
+    {
+      "id": "theon",
+      "name": "Theon Greyjoy's Path",
+      "primaryColor": {
+        "red": 0,
+        "green": 105,
+        "blue": 148
+      },
+      "secondaryColor": {
+        "red": 0,
+        "green": 74,
+        "blue": 104
+      },
+      "tertiaryColor": {
+        "red": 77,
+        "green": 155,
+        "blue": 184
+      },
+      "chapters": {
+        "default": {
+          "id": "default",
+          "name": "Default",
+          "date": "0",
+          "index": 0,
+          "book": ""
+        },
+        "acok_theon_1": {
+          "id": "acok_theon_1",
+          "name": "Theon I",
+          "date": "",
+          "index": 1,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_theon_2": {
+          "id": "acok_theon_2",
+          "name": "Theon II",
+          "date": "",
+          "index": 2,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_theon_3": {
+          "id": "acok_theon_3",
+          "name": "Theon III",
+          "date": "",
+          "index": 3,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_theon_4": {
+          "id": "acok_theon_4",
+          "name": "Theon IV",
+          "date": "",
+          "index": 4,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_theon_5": {
+          "id": "acok_theon_5",
+          "name": "Theon V",
+          "date": "",
+          "index": 5,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_theon_6": {
+          "id": "acok_theon_6",
+          "name": "Theon VI",
+          "date": "",
+          "index": 6,
+          "warp": "",
+          "book": "acok"
+        },
+        "adwd_theon_1": {
+          "id": "adwd_theon_1",
+          "name": "Reek I",
+          "date": "",
+          "index": 7,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_theon_2": {
+          "id": "adwd_theon_2",
+          "name": "Reek II",
+          "date": "",
+          "index": 8,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_theon_3": {
+          "id": "adwd_theon_3",
+          "name": "Reek III",
+          "date": "",
+          "index": 9,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_theon_4": {
+          "id": "adwd_theon_4",
+          "name": "The Prince of Winterfell",
+          "date": "",
+          "index": 10,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_theon_5": {
+          "id": "adwd_theon_5",
+          "name": "The Turncloak",
+          "date": "",
+          "index": 11,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_theon_6": {
+          "id": "adwd_theon_6",
+          "name": "A Ghost in Winterfell",
+          "date": "",
+          "index": 12,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_theon_7": {
+          "id": "adwd_theon_7",
+          "name": "Theon I",
+          "date": "",
+          "index": 13,
+          "warp": "",
+          "book": "adwd"
+        }
+      }
+    },
+    {
+      "id": "davos",
+      "name": "Davos Seaworth's Path",
+      "primaryColor": {
+        "red": 205,
+        "green": 133,
+        "blue": 63
+      },
+      "secondaryColor": {
+        "red": 144,
+        "green": 93,
+        "blue": 44
+      },
+      "tertiaryColor": {
+        "red": 222,
+        "green": 170,
+        "blue": 120
+      },
+      "chapters": {
+        "default": {
+          "id": "default",
+          "name": "Default",
+          "date": "0",
+          "index": 0,
+          "book": ""
+        },
+        "acok_davos_1": {
+          "id": "acok_davos_1",
+          "name": "Davos I",
+          "date": "",
+          "index": 1,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_davos_2": {
+          "id": "acok_davos_2",
+          "name": "Davos II",
+          "date": "",
+          "index": 2,
+          "warp": "",
+          "book": "acok"
+        },
+        "acok_davos_3": {
+          "id": "acok_davos_3",
+          "name": "Davos III",
+          "date": "",
+          "index": 3,
+          "warp": "",
+          "book": "acok"
+        },
+        "asos_davos_1": {
+          "id": "asos_davos_1",
+          "name": "Davos I",
+          "date": "",
+          "index": 4,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_davos_2": {
+          "id": "asos_davos_2",
+          "name": "Davos II",
+          "date": "",
+          "index": 5,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_davos_3": {
+          "id": "asos_davos_3",
+          "name": "Davos III",
+          "date": "",
+          "index": 6,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_davos_4": {
+          "id": "asos_davos_4",
+          "name": "Davos IV",
+          "date": "",
+          "index": 7,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_davos_5": {
+          "id": "asos_davos_5",
+          "name": "Davos V",
+          "date": "",
+          "index": 8,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_davos_6": {
+          "id": "asos_davos_6",
+          "name": "Davos VI",
+          "date": "",
+          "index": 9,
+          "warp": "",
+          "book": "asos"
+        },
+        "adwd_davos_1": {
+          "id": "adwd_davos_1",
+          "name": "Davos I",
+          "date": "",
+          "index": 10,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_davos_2": {
+          "id": "adwd_davos_2",
+          "name": "Davos II",
+          "date": "",
+          "index": 11,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_davos_3": {
+          "id": "adwd_davos_3",
+          "name": "Davos III",
+          "date": "",
+          "index": 12,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_davos_4": {
+          "id": "adwd_davos_4",
+          "name": "Davos IV",
+          "date": "",
+          "index": 13,
+          "warp": "",
+          "book": "adwd"
+        }
+      }
+    },
+    {
+      "id": "cersei",
+      "name": "Cersei Lannister's Path",
+      "primaryColor": {
+        "red": 196,
+        "green": 30,
+        "blue": 58
+      },
+      "secondaryColor": {
+        "red": 137,
+        "green": 21,
+        "blue": 41
+      },
+      "tertiaryColor": {
+        "red": 218,
+        "green": 96,
+        "blue": 113
+      },
+      "chapters": {
+        "default": {
+          "id": "default",
+          "name": "Default",
+          "date": "0",
+          "index": 0,
+          "book": ""
+        },
+        "affc_cersei_1": {
+          "id": "affc_cersei_1",
+          "name": "Cersei I",
+          "date": "",
+          "index": 1,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_cersei_2": {
+          "id": "affc_cersei_2",
+          "name": "Cersei II",
+          "date": "",
+          "index": 2,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_cersei_3": {
+          "id": "affc_cersei_3",
+          "name": "Cersei III",
+          "date": "",
+          "index": 3,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_cersei_4": {
+          "id": "affc_cersei_4",
+          "name": "Cersei IV",
+          "date": "",
+          "index": 4,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_cersei_5": {
+          "id": "affc_cersei_5",
+          "name": "Cersei V",
+          "date": "",
+          "index": 5,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_cersei_6": {
+          "id": "affc_cersei_6",
+          "name": "Cersei VI",
+          "date": "",
+          "index": 6,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_cersei_7": {
+          "id": "affc_cersei_7",
+          "name": "Cersei VII",
+          "date": "",
+          "index": 7,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_cersei_8": {
+          "id": "affc_cersei_8",
+          "name": "Cersei VIII",
+          "date": "",
+          "index": 8,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_cersei_9": {
+          "id": "affc_cersei_9",
+          "name": "Cersei IX",
+          "date": "",
+          "index": 9,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_cersei_10": {
+          "id": "affc_cersei_10",
+          "name": "Cersei X",
+          "date": "",
+          "index": 10,
+          "warp": "",
+          "book": "affc"
+        },
+        "adwd_cersei_1": {
+          "id": "adwd_cersei_1",
+          "name": "Cersei I",
+          "date": "",
+          "index": 11,
+          "warp": "",
+          "book": "adwd"
+        },
+        "adwd_cersei_2": {
+          "id": "adwd_cersei_2",
+          "name": "Cersei II",
+          "date": "",
+          "index": 12,
+          "warp": "",
+          "book": "adwd"
+        }
+      }
+    },
+    {
+      "id": "brienne",
+      "name": "Brienne of Tarth's Path",
+      "primaryColor": {
+        "red": 70,
+        "green": 130,
+        "blue": 180
+      },
+      "secondaryColor": {
+        "red": 49,
+        "green": 91,
+        "blue": 126
+      },
+      "tertiaryColor": {
+        "red": 126,
+        "green": 169,
+        "blue": 204
+      },
+      "chapters": {
+        "default": {
+          "id": "default",
+          "name": "Default",
+          "date": "0",
+          "index": 0,
+          "book": ""
+        },
+        "affc_brienne_1": {
+          "id": "affc_brienne_1",
+          "name": "Brienne I",
+          "date": "",
+          "index": 1,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_brienne_2": {
+          "id": "affc_brienne_2",
+          "name": "Brienne II",
+          "date": "",
+          "index": 2,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_brienne_3": {
+          "id": "affc_brienne_3",
+          "name": "Brienne III",
+          "date": "",
+          "index": 3,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_brienne_4": {
+          "id": "affc_brienne_4",
+          "name": "Brienne IV",
+          "date": "",
+          "index": 4,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_brienne_5": {
+          "id": "affc_brienne_5",
+          "name": "Brienne V",
+          "date": "",
+          "index": 5,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_brienne_6": {
+          "id": "affc_brienne_6",
+          "name": "Brienne VI",
+          "date": "",
+          "index": 6,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_brienne_7": {
+          "id": "affc_brienne_7",
+          "name": "Brienne VII",
+          "date": "",
+          "index": 7,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_brienne_8": {
+          "id": "affc_brienne_8",
+          "name": "Brienne VIII",
+          "date": "",
+          "index": 8,
+          "warp": "",
+          "book": "affc"
+        }
+      }
+    },
+    {
+      "id": "jaime",
+      "name": "Jaime Lannister's Path",
+      "primaryColor": {
+        "red": 220,
+        "green": 20,
+        "blue": 60
+      },
+      "secondaryColor": {
+        "red": 154,
+        "green": 14,
+        "blue": 42
+      },
+      "tertiaryColor": {
+        "red": 233,
+        "green": 93,
+        "blue": 124
+      },
+      "chapters": {
+        "default": {
+          "id": "default",
+          "name": "Default",
+          "date": "0",
+          "index": 0,
+          "book": ""
+        },
+        "asos_jaime_1": {
+          "id": "asos_jaime_1",
+          "name": "Jaime I",
+          "date": "",
+          "index": 1,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_jaime_2": {
+          "id": "asos_jaime_2",
+          "name": "Jaime II",
+          "date": "",
+          "index": 2,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_jaime_3": {
+          "id": "asos_jaime_3",
+          "name": "Jaime III",
+          "date": "",
+          "index": 3,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_jaime_4": {
+          "id": "asos_jaime_4",
+          "name": "Jaime IV",
+          "date": "",
+          "index": 4,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_jaime_5": {
+          "id": "asos_jaime_5",
+          "name": "Jaime V",
+          "date": "",
+          "index": 5,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_jaime_6": {
+          "id": "asos_jaime_6",
+          "name": "Jaime VI",
+          "date": "",
+          "index": 6,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_jaime_7": {
+          "id": "asos_jaime_7",
+          "name": "Jaime VII",
+          "date": "",
+          "index": 7,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_jaime_8": {
+          "id": "asos_jaime_8",
+          "name": "Jaime VIII",
+          "date": "",
+          "index": 8,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_jaime_9": {
+          "id": "asos_jaime_9",
+          "name": "Jaime IX",
+          "date": "",
+          "index": 9,
+          "warp": "",
+          "book": "asos"
+        },
+        "affc_jaime_1": {
+          "id": "affc_jaime_1",
+          "name": "Jaime I",
+          "date": "",
+          "index": 10,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_jaime_2": {
+          "id": "affc_jaime_2",
+          "name": "Jaime II",
+          "date": "",
+          "index": 11,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_jaime_3": {
+          "id": "affc_jaime_3",
+          "name": "Jaime III",
+          "date": "",
+          "index": 12,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_jaime_4": {
+          "id": "affc_jaime_4",
+          "name": "Jaime IV",
+          "date": "",
+          "index": 13,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_jaime_5": {
+          "id": "affc_jaime_5",
+          "name": "Jaime V",
+          "date": "",
+          "index": 14,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_jaime_6": {
+          "id": "affc_jaime_6",
+          "name": "Jaime VI",
+          "date": "",
+          "index": 15,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_jaime_7": {
+          "id": "affc_jaime_7",
+          "name": "Jaime VII",
+          "date": "",
+          "index": 16,
+          "warp": "",
+          "book": "affc"
+        },
+        "adwd_jaime_1": {
+          "id": "adwd_jaime_1",
+          "name": "Jaime I",
+          "date": "",
+          "index": 17,
+          "warp": "",
+          "book": "adwd"
+        }
+      }
+    },
+    {
+      "id": "samwell",
+      "name": "Samwell Tarly's Path",
+      "primaryColor": {
+        "red": 85,
+        "green": 85,
+        "blue": 85
+      },
+      "secondaryColor": {
+        "red": 60,
+        "green": 60,
+        "blue": 60
+      },
+      "tertiaryColor": {
+        "red": 130,
+        "green": 130,
+        "blue": 130
+      },
+      "chapters": {
+        "default": {
+          "id": "default",
+          "name": "Default",
+          "date": "0",
+          "index": 0,
+          "book": ""
+        },
+        "asos_samwell_1": {
+          "id": "asos_samwell_1",
+          "name": "Samwell I",
+          "date": "",
+          "index": 1,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_samwell_2": {
+          "id": "asos_samwell_2",
+          "name": "Samwell II",
+          "date": "",
+          "index": 2,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_samwell_3": {
+          "id": "asos_samwell_3",
+          "name": "Samwell III",
+          "date": "",
+          "index": 3,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_samwell_4": {
+          "id": "asos_samwell_4",
+          "name": "Samwell IV",
+          "date": "",
+          "index": 4,
+          "warp": "",
+          "book": "asos"
+        },
+        "asos_samwell_5": {
+          "id": "asos_samwell_5",
+          "name": "Samwell V",
+          "date": "",
+          "index": 5,
+          "warp": "",
+          "book": "asos"
+        },
+        "affc_samwell_1": {
+          "id": "affc_samwell_1",
+          "name": "Samwell I",
+          "date": "",
+          "index": 6,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_samwell_2": {
+          "id": "affc_samwell_2",
+          "name": "Samwell II",
+          "date": "",
+          "index": 7,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_samwell_3": {
+          "id": "affc_samwell_3",
+          "name": "Samwell III",
+          "date": "",
+          "index": 8,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_samwell_4": {
+          "id": "affc_samwell_4",
+          "name": "Samwell IV",
+          "date": "",
+          "index": 9,
+          "warp": "",
+          "book": "affc"
+        },
+        "affc_samwell_5": {
+          "id": "affc_samwell_5",
+          "name": "Samwell V",
+          "date": "",
+          "index": 10,
+          "warp": "",
+          "book": "affc"
+        }
+      }
+    },
+    {
+      "id": "info",
+      "name": "Project Info",
+      "primaryColor": {
+        "red": 255,
+        "green": 255,
+        "blue": 255
+      },
+      "secondaryColor": {
+        "red": 255,
+        "green": 255,
+        "blue": 255
+      },
+      "tertiaryColor": {
+        "red": 255,
+        "green": 255,
+        "blue": 255
+      },
+      "chapters": {
+        "info": {
+          "id": "info",
+          "name": "Info",
+          "date": "0",
+          "index": 0,
+          "book": ""
+        }
+      }
+    }
+  ],
+  "chapter_starts": {}
+}

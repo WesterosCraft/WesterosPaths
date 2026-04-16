@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:docs.fabricmc.net)",
+      "WebFetch(domain:fabricmc.net)",
+      "WebSearch",
+      "WebFetch(domain:maven.fabricmc.net)",
+      "WebFetch(domain:misode.github.io)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(curl -s \"https://raw.githubusercontent.com/ArdaCraft/ArdaPaths/main/src/main/java/space/ajcool/ardapaths/paths/rendering/objects/AnimatedMessage.java\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/ArdaCraft/ArdaPaths/main/src/main/java/space/ajcool/ardapaths/paths/rendering/ProximityRenderer.java\")",
+      "WebFetch(domain:awoiaf.westeros.org)"
+    ]
+  }
+}

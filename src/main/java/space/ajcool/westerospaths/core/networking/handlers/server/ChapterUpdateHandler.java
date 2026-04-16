@@ -25,7 +25,8 @@ public class ChapterUpdateHandler {
         final String chapterDate = payload.chapterDate();
         final int chapterIndex = payload.chapterIndex();
         final String warp = payload.warp();
-        final ChapterData chapterData = new ChapterData(chapterId, chapterName, chapterDate, chapterIndex, warp);
+        final String book = payload.book();
+        final ChapterData chapterData = new ChapterData(chapterId, chapterName, chapterDate, chapterIndex, warp, book);
 
         pathData.setChapter(chapterData);
         WesterosPaths.CONFIG_MANAGER.save();

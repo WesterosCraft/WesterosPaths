@@ -7,6 +7,9 @@ import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.text.Text;
 import space.ajcool.westerospaths.WesterosPathsClient;
 import space.ajcool.westerospaths.core.data.Journal;
+import space.ajcool.westerospaths.core.data.config.shared.Book;
+import space.ajcool.westerospaths.core.data.config.shared.ChapterData;
+import space.ajcool.westerospaths.core.data.config.shared.PathData;
 import space.ajcool.westerospaths.core.networking.PacketRegistry;
 import space.ajcool.westerospaths.core.networking.packets.server.PlayerTeleportPacket;
 import space.ajcool.westerospaths.paths.rendering.ProximityRenderer;
@@ -50,17 +53,33 @@ public class JournalScreen extends Screen {
 
         for (Journal.Entry entry : journalEntries) {
 
+            String bookPrefix = "";
+            if (entry.pathId() != null && entry.chapterId() != null) {
+                PathData path = WesterosPathsClient.CONFIG.getPath(entry.pathId());
+                if (path != null) {
+                    ChapterData chapter = path.getChapter(entry.chapterId());
+                    if (chapter != null) {
+                        Book book = Book.fromId(chapter.getBook());
+                        if (book != null) {
+                            bookPrefix = book.getDisplayName() + " - ";
+                        }
+                    }
+                }
+            }
+
+            String entryText = bookPrefix + entry.text();
+
             switch (entry.type()) {
                 case CHAPTER_START -> entries.add(new JournalListEntry(
                         Text.translatable("westerospaths.client.journal.screen.entry.type.chapter"),
-                        Text.literal(entry.text()),
+                        Text.literal(entryText),
                         Text.translatable("westerospaths.client.journal.screen.teleport"),
                         entry.color(),
                         button -> handleTeleportRequest(entry.pathId(), entry.chapterId(), entry.teleportPacket())
                 ));
                 case PROXIMITY_MESSAGE -> entries.add(new JournalListEntry(
                         Text.translatable("westerospaths.client.journal.screen.entry.type.entry"),
-                        Text.literal(entry.text()),
+                        Text.literal(entryText),
                         Text.translatable("westerospaths.client.journal.screen.teleport"),
                         entry.color(),
                         button -> handleTeleportRequest(entry.pathId(), entry.chapterId(), entry.teleportPacket())

@@ -19,6 +19,9 @@ public class ChapterData
     @SerializedName("warp")
     private String warp;
 
+    @SerializedName("book")
+    private String book;
+
     public ChapterData(String id, String name, String date, int index)
     {
         this.id = id;
@@ -34,6 +37,16 @@ public class ChapterData
         this.date = date;
         this.index = index;
         this.warp = warp;
+    }
+
+    public ChapterData(String id, String name, String date, int index, String warp, String book)
+    {
+        this.id = id;
+        this.name = name;
+        this.date = date;
+        this.index = index;
+        this.warp = warp;
+        this.book = book;
     }
 
     /**
@@ -125,6 +138,22 @@ public class ChapterData
      */
     public ChapterData setWarp(String warp) {
         this.warp = warp;
+        return this;
+    }
+
+    /**
+     * @return The book this chapter belongs to
+     */
+    public String getBook() {
+        return book == null ? "" : book;
+    }
+
+    /**
+     * Sets the book this chapter belongs to.
+     * @param book The book identifier (e.g. "agot", "acok")
+     */
+    public ChapterData setBook(String book) {
+        this.book = book;
         return this;
     }
 }

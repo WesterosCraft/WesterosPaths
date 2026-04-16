@@ -6,10 +6,12 @@ import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.text.Text;
 import space.ajcool.westerospaths.WesterosPathsClient;
+import space.ajcool.westerospaths.core.data.config.shared.Book;
 import space.ajcool.westerospaths.core.data.config.shared.ChapterData;
 import space.ajcool.westerospaths.core.networking.PacketRegistry;
 import space.ajcool.westerospaths.core.networking.packets.server.PathMarkerLinksUpdatePacket;
 import space.ajcool.westerospaths.mc.blocks.entities.PathMarkerBlockEntity;
+import space.ajcool.westerospaths.screens.builders.DropdownBuilder;
 import space.ajcool.westerospaths.screens.builders.TextBuilder;
 
 import java.util.*;
@@ -19,12 +21,19 @@ public class MarkerLinksEditScreen extends Screen {
 
     private final PathMarkerBlockEntity MARKER;
     private final Set<AbstractMap.SimpleEntry<String, String>> originalPathAndChapterData;
+    private Book selectedBookFilter;
 
     protected MarkerLinksEditScreen(PathMarkerBlockEntity marker, Set<AbstractMap.SimpleEntry<String, String>> originalPathAndChapterData)
+    {
+        this(marker, originalPathAndChapterData, null);
+    }
+
+    protected MarkerLinksEditScreen(PathMarkerBlockEntity marker, Set<AbstractMap.SimpleEntry<String, String>> originalPathAndChapterData, Book bookFilter)
     {
         super(Text.translatable("westerospaths.client.chapter.configuration.screens.marker.links.edit"));
         this.MARKER = marker;
         this.originalPathAndChapterData = originalPathAndChapterData;
+        this.selectedBookFilter = bookFilter;
     }
 
     @Override
@@ -37,6 +46,37 @@ public class MarkerLinksEditScreen extends Screen {
                 .setPosition(centerX - 70, y)
                 .setSize(140, 20)
                 .setText(Text.translatable("westerospaths.client.chapter.configuration.screens.marker.links.edit_marker_links"))
+                .build()
+        );
+
+        List<Book> bookOptions = new ArrayList<>();
+        if (MARKER.getPathData() != null) {
+            for (Book book : Book.values()) {
+                boolean hasChapters = MARKER.getPathData().keySet().stream()
+                        .map(WesterosPathsClient.CONFIG::getPath)
+                        .filter(Objects::nonNull)
+                        .flatMap(p -> p.getChapters().stream())
+                        .anyMatch(ch -> ch.getBook().equalsIgnoreCase(book.getId()));
+                if (hasChapters) {
+                    bookOptions.add(book);
+                }
+            }
+        }
+        this.addDrawableChild(DropdownBuilder.<Book>create()
+                .setPosition(centerX - 100, y += 30)
+                .setSize(200, 20)
+                .setTitle(Text.literal("Filter by Book"))
+                .setOptions(bookOptions)
+                .setAllowNull(true)
+                .setOptionDisplay(book -> {
+                    if (book == null) return Text.literal("All Books");
+                    return Text.literal(book.getDisplayName());
+                })
+                .setSelected(selectedBookFilter)
+                .setOnSelect(book -> {
+                    selectedBookFilter = book;
+                    MinecraftClient.getInstance().setScreen(new MarkerLinksEditScreen(MARKER, originalPathAndChapterData, book));
+                })
                 .build()
         );
 
@@ -58,6 +98,8 @@ public class MarkerLinksEditScreen extends Screen {
                     chapterData.sort((o1, o2) -> Integer.compare(o1.getIndex(), o2.getIndex()));
 
                     for (ChapterData chapter : chapterData) {
+
+                        if (selectedBookFilter != null && !chapter.getBook().equalsIgnoreCase(selectedBookFilter.getId()) && !chapter.getId().equals("default")) continue;
 
                         boolean doesMarkerReferenceChapter = MARKER.getPathData().get(pathEntryKey).containsKey(chapter.getId());
                         boolean isDefault = MARKER.getPathData().get(pathEntryKey).get(chapter.getId()) == null || MARKER.getPathData().get(pathEntryKey).get(chapter.getId()).isEmpty();

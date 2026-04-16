@@ -14,6 +14,7 @@ import net.minecraft.util.math.MathHelper;
 import org.jetbrains.annotations.NotNull;
 import space.ajcool.westerospaths.WesterosPathsClient;
 import space.ajcool.westerospaths.core.data.Journal;
+import space.ajcool.westerospaths.core.data.config.shared.Book;
 import space.ajcool.westerospaths.core.data.config.shared.ChapterData;
 import space.ajcool.westerospaths.core.data.config.shared.Color;
 import space.ajcool.westerospaths.core.data.config.shared.PathData;
@@ -31,6 +32,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.function.Supplier;
+import java.util.stream.Collectors;
 
 @Environment(value = EnvType.CLIENT)
 public class PathSelectionScreen extends Screen
@@ -42,6 +44,7 @@ public class PathSelectionScreen extends Screen
     private static final int UI_SEPARATOR_SPACING = 10;;
     private static final int TITLE_SPACING = 20;
 
+    private String selectedBook;
     private String selectedPathId;
     private String selectedChapterId;
     private boolean showProximityMessages;
@@ -55,6 +58,7 @@ public class PathSelectionScreen extends Screen
     public PathSelectionScreen()
     {
         super(Text.literal(Text.translatable("westerospaths.client.configuration.screens.path_selection").getString()));
+        this.selectedBook = "";
         this.selectedPathId = WesterosPathsClient.CONFIG.getSelectedPathId();
         this.selectedChapterId = WesterosPathsClient.CONFIG.getCurrentChapterId();
         this.showProximityMessages = WesterosPathsClient.CONFIG.showProximityMessages();
@@ -66,7 +70,7 @@ public class PathSelectionScreen extends Screen
     @Override
     protected void init()
     {
-        var totalUiHeight = (UI_ELEMENT_HEIGHT * 6) + (UI_ELEMENT_SPACING * 5) + UI_SEPARATOR_SPACING + TITLE_SPACING;
+        var totalUiHeight = (UI_ELEMENT_HEIGHT * 7) + (UI_ELEMENT_SPACING * 6) + UI_SEPARATOR_SPACING + TITLE_SPACING;
 
         int center = width / 2;
         int y = (height / 2) - (totalUiHeight / 2);
@@ -78,9 +82,10 @@ public class PathSelectionScreen extends Screen
         String currentPathName = currentPath != null ? currentPath.getName() : Text.translatable("westerospaths.client.configuration.screens.generic_path").toString();
 
         int totalContentWidth = UI_ELEMENT_WIDTH * 2 + COLUMNS_SPACING;
+        int textWidth = (int)(width * 0.6);
         this.addDrawableChild(TextBuilder.create()
-                .setPosition(center - totalContentWidth / 2, y)
-                .setSize(totalContentWidth, 20)
+                .setPosition(center - textWidth / 2, y)
+                .setSize(textWidth, 20)
                 .setText(Text.literal(Text.translatable("westerospaths.client.configuration.screens.path_selection.current_path_chapter",currentChapterName).getString())
                         .append(Text.literal(Text.translatable(currentPathName).getString())
                                 .fillStyle(Style.EMPTY.withColor(currentPath != null ? currentPath.getPrimaryColor().asHex() : Color.fromRgb(100, 100, 100).asHex()))))
@@ -90,7 +95,8 @@ public class PathSelectionScreen extends Screen
         var horizontalHalfCenterGap = COLUMNS_SPACING /2;
         var uiElementVerticalGap = UI_ELEMENT_HEIGHT + UI_ELEMENT_SPACING;
 
-        this.addDrawableChild(initializePathSelectionDropDown(center - UI_ELEMENT_WIDTH - horizontalHalfCenterGap, y += uiElementVerticalGap + TITLE_SPACING));
+        this.addDrawableChild(initializePathSelectionDropDown(center - totalContentWidth / 2, y += uiElementVerticalGap + TITLE_SPACING));
+        this.addDrawableChild(initializeBookFilterDropDown(center - UI_ELEMENT_WIDTH - horizontalHalfCenterGap, y += uiElementVerticalGap + UI_SEPARATOR_SPACING));
         this.addDrawableChild(this.initializeChapterSelectionDropDown(center + horizontalHalfCenterGap, y, currentPath, currentChapter));
         this.addDrawableChild(initializeReturnToChapterStartButton(center - UI_ELEMENT_WIDTH - horizontalHalfCenterGap,y+= uiElementVerticalGap));
         this.addDrawableChild(initializeReturnToPathButton(center + horizontalHalfCenterGap,y));
@@ -105,12 +111,63 @@ public class PathSelectionScreen extends Screen
         this.addDrawableChild(initializeJournalButton(center - (UI_ELEMENT_WIDTH / 2),y + uiElementVerticalGap));
     }
 
+    private List<PathData> getFilteredPaths() {
+        List<PathData> allPaths = WesterosPathsClient.CONFIG.getPaths();
+        if (selectedBook == null || selectedBook.isEmpty()) {
+            return allPaths;
+        }
+        return allPaths.stream()
+                .filter(p -> p.getChapters().stream().anyMatch(ch -> ch.getBook().equalsIgnoreCase(selectedBook)))
+                .collect(Collectors.toList());
+    }
+
+    private List<ChapterData> getFilteredChapters(PathData path) {
+        if (path == null) return new ArrayList<>();
+        List<ChapterData> chapters = new ArrayList<>(path.getChapters());
+        if (selectedBook != null && !selectedBook.isEmpty()) {
+            chapters.removeIf(ch -> !ch.getBook().equalsIgnoreCase(selectedBook) && !ch.getId().equals("default"));
+        }
+        chapters.sort(Comparator.comparingInt(ChapterData::getIndex));
+        return chapters;
+    }
+
+    private @NotNull DropdownWidget<Book> initializeBookFilterDropDown(int x, int y) {
+        PathData selectedPath = WesterosPathsClient.CONFIG.getPath(selectedPathId);
+        List<Book> bookOptions = new ArrayList<>();
+        for (Book book : Book.values()) {
+            boolean hasChapters = selectedPath != null && selectedPath.getChapters().stream()
+                    .anyMatch(ch -> ch.getBook().equalsIgnoreCase(book.getId()));
+            if (hasChapters) {
+                bookOptions.add(book);
+            }
+        }
+
+        Book currentBook = Book.fromId(selectedBook);
+
+        return DropdownBuilder.<Book>create()
+                .setPosition(x, y)
+                .setSize(UI_ELEMENT_WIDTH, UI_ELEMENT_HEIGHT)
+                .setTitle(Text.literal("Filter by Book"))
+                .setOptions(bookOptions)
+                .setAllowNull(true)
+                .setOptionDisplay(item -> {
+                    if (item == null) return Text.literal("All Books");
+                    return Text.literal(item.getDisplayName());
+                })
+                .setSelected(currentBook)
+                .setOnSelect(book -> {
+                    selectedBook = book == null ? "" : book.getId();
+                    this.clearAndInit();
+                })
+                .build();
+    }
+
     private @NotNull DropdownWidget<PathData> initializePathSelectionDropDown(int center, int y) {
         DropdownWidget<PathData> pathSelectionDropdown = DropdownBuilder.<PathData>create()
                 .setPosition(center,y)
-                .setSize(UI_ELEMENT_WIDTH, UI_ELEMENT_HEIGHT)
+                .setSize(UI_ELEMENT_WIDTH * 2 + COLUMNS_SPACING, UI_ELEMENT_HEIGHT)
                 .setTitle(Text.translatable( "westerospaths.client.configuration.screens.select_path_follow"))
-                .setOptions(WesterosPathsClient.CONFIG.getPaths())
+                .setOptions(getFilteredPaths())
                 .setOptionDisplay(item ->
                 {
                     if (item == null) return Text.literal("No Path");
@@ -129,6 +186,7 @@ public class PathSelectionScreen extends Screen
 
                     selectedPathId = path.getId();
                     selectedChapterId = path.getChapterIds().get(0);
+                    selectedBook = "";
 
                     Paths.setSelectedPath(selectedPathId);
                     Paths.gotoChapter(selectedChapterId, false);
@@ -143,8 +201,7 @@ public class PathSelectionScreen extends Screen
 
     private @NotNull DropdownWidget<ChapterData> initializeChapterSelectionDropDown(int center, int y, PathData currentPath, ChapterData currentChapter) {
 
-        List<ChapterData> chapterData = currentPath != null ? new ArrayList<>(currentPath.getChapters()) : new ArrayList<>();
-        chapterData.sort(Comparator.comparingInt(ChapterData::getIndex));
+        List<ChapterData> chapterData = getFilteredChapters(currentPath);
 
         return DropdownBuilder.<ChapterData>create()
                 .setPosition(center, y)

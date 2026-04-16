@@ -53,6 +53,7 @@ Accessed through the marker configuration screen by clicking the `Edit Chapters`
 - `date` the date associated with this message / event (display purposes only)
 - `index` the index of the chapter : this will determine its position in the chapter selection dropdowns and is used in dertermining which chapter to switch to when changing chapters.
 - `warp` the warp location for this chapter (this fuctionnality uses HuskHomes warp command). This is the teleport location when the user clicks `Return to Chapter Start` on his pathfinder. Acceptable values for this field are either a warp location or a set of coordinates (x y z) such as `-56 16 12`
+- `book` the book this chapter belongs to (e.g. `agot`, `acok`, `asos`, `affc`, `adwd`). This allows a single path to contain chapters from multiple books. The Pathfinder's book filter uses this field to show only relevant paths and chapters.
 
 <br/><br/><br/>
 
@@ -69,8 +70,9 @@ The pathfinder is an item that allows players to select and follow paths. When u
 
 <img align="left" width="280" src="https://github.com/user-attachments/assets/46c50ff2-9468-4bad-ac23-b291f2142336">
 
-- `Select a Path to Follow` dropdown allows selecting a character's path to follow
-- `Select a Chapter` dropdown allows selecting a chapter from the book within the selected path
+- `Filter by Book` dropdown filters paths and chapters by book (e.g. A Game of Thrones, A Clash of Kings). Select "All Books" to show everything.
+- `Select a Path to Follow` dropdown allows selecting a character's path to follow (filtered by the selected book)
+- `Select a Chapter` dropdown allows selecting a chapter within the selected path (filtered by the selected book)
 - `Return to Path` teleports the player to the last visited path marker for the selected chapter
 - `Return to Chapter Start` teleports the player to the warp location defined for the selected chapter
 - `Proximity text` toggle the display of proximity messages when approaching markers
@@ -111,7 +113,16 @@ New paths can be added to the `westeros-paths/server.json` file with the followi
                     "name": "Default",
                     "date": "0",
                     "index": 0,
-                    "warp": "warpLocation"
+                    "warp": "warpLocation",
+                    "book": ""
+                },
+                "got_example_1": {
+                    "id": "got_example_1",
+                    "name": "Chapter I",
+                    "date": "",
+                    "index": 1,
+                    "warp": "",
+                    "book": "agot"
                 }
             }
         }
