@@ -2697,6 +2697,20 @@
           "date": "0",
           "index": 0,
           "book": ""
+        },
+        "spawn": {
+          "id": "spawn",
+          "name": "Spawn",
+          "date": "0",
+          "index": 0,
+          "book": ""
+        },
+        "highgarden": {
+          "id": "hg",
+          "name": "Highgarden",
+          "date": "0",
+          "index": 0,
+          "book": ""
         }
       }
     }
