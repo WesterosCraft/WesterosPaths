@@ -2702,14 +2702,14 @@
           "id": "spawn",
           "name": "Spawn",
           "date": "0",
-          "index": 0,
+          "index": 1,
           "book": ""
         },
         "highgarden": {
           "id": "hg",
           "name": "Highgarden",
           "date": "0",
-          "index": 0,
+          "index": 2,
           "book": ""
         }
       }
